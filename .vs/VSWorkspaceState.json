@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.NET"
+    "\\.NET",
+    "\\.NET\\Coffesoft Application",
+    "\\.NET\\Coffesoft Application\\Application"
   ],
-  "SelectedNode": "\\.NET\\Coffesoft Application",
+  "SelectedNode": "\\.NET\\Coffesoft Application\\Application\\Application.sln",
   "PreviewInSolutionExplorer": false
 }
