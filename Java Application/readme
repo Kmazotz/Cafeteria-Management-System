@@ -7,7 +7,7 @@ Java Development Kit : JDK 10
 Structure : 
            MVP
            
-           Model -> -> Forms Controllers
+           Model -> Forms Controllers
            View -> Forms
            Presenter 
            
