@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Coffesoft App/Coffesoft App.iml" filepath="$PROJECT_DIR$/Coffesoft App/Coffesoft App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data Services/Data Services.iml" filepath="$PROJECT_DIR$/Data Services/Data Services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java Application.iml" filepath="$PROJECT_DIR$/.idea/Java Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module Services/Module Services.iml" filepath="$PROJECT_DIR$/Module Services/Module Services.iml" />
+    </modules>
+  </component>
+</project>
