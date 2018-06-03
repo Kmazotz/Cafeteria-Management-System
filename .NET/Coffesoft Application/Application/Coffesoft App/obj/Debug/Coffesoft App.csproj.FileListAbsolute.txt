@@ -16,3 +16,6 @@ C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.N
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\CoffesoftApp.exe
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\CoffesoftApp.pdb
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\App.Test.resources
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\MySql.Data.dll
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Google.Protobuf.dll
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\MySql.Data.xml

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,8 +11,11 @@ namespace DataServices.Connectors
 {
     public class MySQLConnector : DBConnector
     {
+        protected MySqlConnection connection;
+
         public MySQLConnector(string server, string dataBase, int port, string user, string password) : base(server, dataBase, port, user, password)
         {
+            connection = new MySqlConnection(CreateConnection(("sslmode", "none")));
         }
 
         public override bool CloseConnection()
@@ -31,6 +37,24 @@ namespace DataServices.Connectors
         {
             throw new NotImplementedException();
         }
+
+        public override DataTable GetMapQuery(string table, string fields)
+        {
+            throw new NotImplementedException();
+        }
+
+        /*
+public DataTable GetTableMap()
+{
+   connection.Open();
+   DataTable table = new DataTable("inventory");
+   MySqlCommand cmd = new MySqlCommand("select * from tbl_inventory", connection);
+   cmd.ExecuteNonQuery();
+   MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+   adapter.Fill(table);
+   MySqlCommandBuilder builder = new MySqlCommandBuilder(adapter);
+   return table;
+}*/
 
         public override void InsertQuery(string table, string fields, string values)
         {
