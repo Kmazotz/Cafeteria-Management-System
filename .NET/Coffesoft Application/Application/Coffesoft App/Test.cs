@@ -20,7 +20,7 @@ namespace App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show($"Connetion :{new MySQLConnector("localhost", "coffesoft", 3306, "root", "").CreateConnection()}","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show($"Connetion :{new MySQLConnector("localhost", "coffesoft", 3306, "root", "").CreateConnection(("", ""), ("sslmode", "none"),("",""))}", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

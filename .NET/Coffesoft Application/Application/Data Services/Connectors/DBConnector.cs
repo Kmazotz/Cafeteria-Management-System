@@ -1,10 +1,12 @@
-﻿using MySql.Data.MySqlClient;
+﻿using DataServices.Extensions;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DataServices.Connectors
 {
@@ -33,6 +35,30 @@ namespace DataServices.Connectors
             connection.Add("Port", Port);
             connection.Add("User", User);
             connection.Add("Password", Password);
+            return connection.ConnectionString;
+        }
+
+        public string CreateConnection<T>(params ValueTuple<string, T>[] parameters)
+        {
+            DbConnectionStringBuilder connection = new DbConnectionStringBuilder(true);
+            connection.Add("Server", Server);
+            connection.Add("Database", DataBase);
+            connection.Add("Port", Port);
+            connection.Add("User", User);
+            connection.Add("Password", Password);
+            try
+            {
+                foreach ((string, T) param in parameters)
+                {
+                    var val = param.ToKeyValue();
+                    connection.Add(val.Key, val.Value);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+
             return connection.ConnectionString;
         }
 

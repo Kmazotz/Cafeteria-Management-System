@@ -9,10 +9,10 @@ C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.N
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Data Services.dll.config
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Module Services.pdb
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\Coffesoft App.csprojAssemblyReference.cache
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\App.Properties.Resources.resources
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\Coffesoft App.csproj.GenerateResource.cache
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\Coffesoft App.csproj.CoreCompileInputs.cache
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\Coffesoft App.csproj.CopyComplete
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\CoffesoftApp.exe
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\CoffesoftApp.pdb
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\App.Test.resources
