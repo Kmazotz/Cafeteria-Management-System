@@ -1,4 +1,5 @@
 ﻿using App;
+using App.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Test());
+            Application.Run(new LoginView());
         }
     }
 }
