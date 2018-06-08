@@ -30,8 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ControlsDesigner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\ControlsDesigner.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +46,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Panels\BorderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawEditor.Designer.cs">
+      <DependentUpon>DrawEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ButtonBar.cs" />
+    <Compile Include="Panels\TitleBarPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DrawEditor.resx">
+      <DependentUpon>DrawEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TitleBarPanel.resx">
+      <DependentUpon>TitleBarPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Buttons\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

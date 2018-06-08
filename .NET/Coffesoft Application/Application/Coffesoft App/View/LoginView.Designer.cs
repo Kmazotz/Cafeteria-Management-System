@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MaximizeButton = new System.Windows.Forms.Button();
             this.LoginPanel = new System.Windows.Forms.Panel();
             this.CoffesoftLabel = new System.Windows.Forms.Label();
             this.ErrorPwdLabel = new System.Windows.Forms.Label();
@@ -38,25 +37,9 @@
             this.SinginLabel = new System.Windows.Forms.Label();
             this.UsernameTxtBox = new System.Windows.Forms.TextBox();
             this.ForgotPwdLabel = new System.Windows.Forms.Label();
-            this.MinimizeButton = new System.Windows.Forms.Button();
-            this.CloseButton = new System.Windows.Forms.Button();
+            this.TitleBar = new ControlsDesigner.Panels.TitleBarPanel();
             this.LoginPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MaximizeButton
-            // 
-            this.MaximizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MaximizeButton.AutoSize = true;
-            this.MaximizeButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.MaximizeButton.FlatAppearance.BorderSize = 0;
-            this.MaximizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MaximizeButton.Image = global::App.Properties.Resources.Maximize_Icon;
-            this.MaximizeButton.Location = new System.Drawing.Point(749, 0);
-            this.MaximizeButton.Name = "MaximizeButton";
-            this.MaximizeButton.Size = new System.Drawing.Size(26, 23);
-            this.MaximizeButton.TabIndex = 12;
-            this.MaximizeButton.UseVisualStyleBackColor = true;
-            this.MaximizeButton.Click += new System.EventHandler(this.MaximizeButton_Click);
             // 
             // LoginPanel
             // 
@@ -103,6 +86,7 @@
             this.ErrorPwdLabel.Size = new System.Drawing.Size(263, 21);
             this.ErrorPwdLabel.TabIndex = 5;
             this.ErrorPwdLabel.Text = "Su cuenta o contraseña es incorrecta.";
+            this.ErrorPwdLabel.Visible = false;
             // 
             // LoginButton
             // 
@@ -129,6 +113,7 @@
             this.ErrorUsrLabel.Size = new System.Drawing.Size(356, 44);
             this.ErrorUsrLabel.TabIndex = 4;
             this.ErrorUsrLabel.Text = "Ingrese una dirección de correo electrónico válida o un nombre de usuario.";
+            this.ErrorUsrLabel.Visible = false;
             // 
             // PasswordTxtBox
             // 
@@ -174,36 +159,21 @@
             this.ForgotPwdLabel.TabIndex = 3;
             this.ForgotPwdLabel.Text = "Olvide mi contraseña";
             // 
-            // MinimizeButton
+            // TitleBar
             // 
-            this.MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinimizeButton.AutoSize = true;
-            this.MinimizeButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.MinimizeButton.FlatAppearance.BorderSize = 0;
-            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MinimizeButton.Image = global::App.Properties.Resources.Minimize_Icon;
-            this.MinimizeButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.MinimizeButton.Location = new System.Drawing.Point(724, 0);
-            this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(26, 23);
-            this.MinimizeButton.TabIndex = 11;
-            this.MinimizeButton.UseVisualStyleBackColor = true;
-            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseButton.AutoSize = true;
-            this.CloseButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.CloseButton.FlatAppearance.BorderSize = 0;
-            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseButton.Image = global::App.Properties.Resources.Close_Icon;
-            this.CloseButton.Location = new System.Drawing.Point(774, 0);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(26, 23);
-            this.CloseButton.TabIndex = 10;
-            this.CloseButton.UseVisualStyleBackColor = true;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            this.TitleBar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.TitleBar.BarIcon = global::App.Properties.Resources.Coffesoft_Icon;
+            this.TitleBar.CloseIcon = global::App.Properties.Resources.Close_Icon;
+            this.TitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TitleBar.ForeColor = System.Drawing.Color.White;
+            this.TitleBar.Location = new System.Drawing.Point(0, 0);
+            this.TitleBar.MaximizeIcon = global::App.Properties.Resources.Maximize_Icon;
+            this.TitleBar.MinimizeIcon = global::App.Properties.Resources.Minimize_Icon;
+            this.TitleBar.Name = "TitleBar";
+            this.TitleBar.Size = new System.Drawing.Size(800, 23);
+            this.TitleBar.TabIndex = 15;
+            this.TitleBar.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleBar.TitleText = "Login - Coffesoft";
             // 
             // LoginView
             // 
@@ -211,26 +181,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(800, 600);
-            this.Controls.Add(this.MaximizeButton);
+            this.Controls.Add(this.TitleBar);
             this.Controls.Add(this.LoginPanel);
-            this.Controls.Add(this.MinimizeButton);
-            this.Controls.Add(this.CloseButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.LoginView_Load);
             this.LoginPanel.ResumeLayout(false);
             this.LoginPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button MaximizeButton;
         private System.Windows.Forms.Panel LoginPanel;
         private System.Windows.Forms.Label CoffesoftLabel;
         private System.Windows.Forms.Label ErrorPwdLabel;
@@ -240,7 +206,6 @@
         private System.Windows.Forms.Label SinginLabel;
         private System.Windows.Forms.TextBox UsernameTxtBox;
         private System.Windows.Forms.Label ForgotPwdLabel;
-        private System.Windows.Forms.Button MinimizeButton;
-        private System.Windows.Forms.Button CloseButton;
+        private ControlsDesigner.Panels.TitleBarPanel TitleBar;
     }
 }
