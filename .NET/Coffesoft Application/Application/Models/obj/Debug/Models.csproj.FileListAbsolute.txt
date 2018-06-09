@@ -1,0 +1,6 @@
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\bin\Debug\App.Models.dll
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\bin\Debug\App.Models.pdb
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\obj\Debug\App.Models.dll
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\obj\Debug\App.Models.pdb

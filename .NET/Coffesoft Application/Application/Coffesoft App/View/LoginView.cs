@@ -13,6 +13,8 @@ namespace App.View
 {
     public partial class LoginView : Form
     {
+        static Form MainView { get; set; }
+
         private const int WM_NCHITTEST = 0x84;
         private const int HT_CLIENT = 0x1;
         private const int HT_CAPTION = 0x2;
@@ -58,6 +60,21 @@ namespace App.View
             TitleBar.AddEvent(MinimizeButton_Click, ButtonBar.Minimize);
             TitleBar.AddEvent(MaximizeButton_Click, ButtonBar.Maximize);
             TitleBar.AddEvent(CloseButton_Click, ButtonBar.Close);
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainView = new IndexView(this);
+            MainView.MdiParent = this.MdiParent;
+            MainView.ShowDialog(this);
+           
+           
+        }
+
+        private void ForgotPwdLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

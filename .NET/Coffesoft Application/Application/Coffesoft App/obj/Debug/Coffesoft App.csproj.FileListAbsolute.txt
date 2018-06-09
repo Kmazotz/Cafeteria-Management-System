@@ -2,12 +2,7 @@ C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.N
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\CoffesoftApp.exe
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\CoffesoftApp.pdb
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\ControlsDesigner.dll
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Data Services.dll
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Module Services.dll
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\ControlsDesigner.pdb
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Data Services.pdb
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Data Services.dll.config
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Module Services.pdb
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\Coffesoft App.csprojAssemblyReference.cache
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\App.Properties.Resources.resources
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\Coffesoft App.csproj.GenerateResource.cache
@@ -20,3 +15,9 @@ C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.N
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\Google.Protobuf.dll
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\MySql.Data.xml
 C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\App.View.LoginView.resources
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\obj\Debug\App.View.IndexView.resources
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\App.Controllers.dll
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\App.Models.dll
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\App.Controllers.pdb
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\App.Controllers.dll.config
+C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Coffesoft App\bin\Debug\App.Models.pdb

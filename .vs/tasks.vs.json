@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "tarea-Application",
+      "appliesTo": ".NET/Coffesoft Application/Application/Application.sln",
+      "type": "launch"
+    }
+  ]
+}

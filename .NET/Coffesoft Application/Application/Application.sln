@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data Services", "Data Services\Data Services.csproj", "{E2A3440D-1F28-407C-8189-405D7C00FAE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Data Services\Controllers.csproj", "{E2A3440D-1F28-407C-8189-405D7C00FAE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module Services", "Module Services\Module Services.csproj", "{F94290A8-8E78-42F8-923E-47D16BF04E7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Module Services\Models.csproj", "{F94290A8-8E78-42F8-923E-47D16BF04E7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlsDesigner", "ControlsDesigner\ControlsDesigner.csproj", "{129E4D11-C0F0-4AA7-B5B9-42CEE4237512}"
 EndProject

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.LoginPanel = new System.Windows.Forms.Panel();
-            this.CoffesoftLabel = new System.Windows.Forms.Label();
             this.ErrorPwdLabel = new System.Windows.Forms.Label();
             this.LoginButton = new System.Windows.Forms.Button();
             this.ErrorUsrLabel = new System.Windows.Forms.Label();
@@ -37,7 +36,8 @@
             this.SinginLabel = new System.Windows.Forms.Label();
             this.UsernameTxtBox = new System.Windows.Forms.TextBox();
             this.ForgotPwdLabel = new System.Windows.Forms.Label();
-            this.TitleBar = new ControlsDesigner.Panels.TitleBarPanel();
+            this.CoffesoftLabel = new System.Windows.Forms.Label();
+            this.TitleBar = new ControlsDesigner.Panels.TitleBar();
             this.LoginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,20 +60,6 @@
             this.LoginPanel.Name = "LoginPanel";
             this.LoginPanel.Size = new System.Drawing.Size(440, 372);
             this.LoginPanel.TabIndex = 9;
-            // 
-            // CoffesoftLabel
-            // 
-            this.CoffesoftLabel.BackColor = System.Drawing.Color.Transparent;
-            this.CoffesoftLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoffesoftLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(25)))));
-            this.CoffesoftLabel.Image = global::App.Properties.Resources.Coffesoft_Icon;
-            this.CoffesoftLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CoffesoftLabel.Location = new System.Drawing.Point(39, 27);
-            this.CoffesoftLabel.Name = "CoffesoftLabel";
-            this.CoffesoftLabel.Size = new System.Drawing.Size(123, 25);
-            this.CoffesoftLabel.TabIndex = 7;
-            this.CoffesoftLabel.Text = "COFFESOFT";
-            this.CoffesoftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ErrorPwdLabel
             // 
@@ -102,6 +88,7 @@
             this.LoginButton.TabIndex = 0;
             this.LoginButton.Text = "Iniciar Sesión";
             this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // ErrorUsrLabel
             // 
@@ -158,6 +145,21 @@
             this.ForgotPwdLabel.Size = new System.Drawing.Size(127, 17);
             this.ForgotPwdLabel.TabIndex = 3;
             this.ForgotPwdLabel.Text = "Olvide mi contraseña";
+            this.ForgotPwdLabel.Click += new System.EventHandler(this.ForgotPwdLabel_Click);
+            // 
+            // CoffesoftLabel
+            // 
+            this.CoffesoftLabel.BackColor = System.Drawing.Color.Transparent;
+            this.CoffesoftLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoffesoftLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(25)))));
+            this.CoffesoftLabel.Image = global::App.Properties.Resources.Coffesoft_Icon;
+            this.CoffesoftLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CoffesoftLabel.Location = new System.Drawing.Point(39, 27);
+            this.CoffesoftLabel.Name = "CoffesoftLabel";
+            this.CoffesoftLabel.Size = new System.Drawing.Size(123, 25);
+            this.CoffesoftLabel.TabIndex = 7;
+            this.CoffesoftLabel.Text = "COFFESOFT";
+            this.CoffesoftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TitleBar
             // 
@@ -172,6 +174,7 @@
             this.TitleBar.Name = "TitleBar";
             this.TitleBar.Size = new System.Drawing.Size(800, 23);
             this.TitleBar.TabIndex = 15;
+            this.TitleBar.TabStop = true;
             this.TitleBar.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitleBar.TitleText = "Login - Coffesoft";
             // 
@@ -206,6 +209,6 @@
         private System.Windows.Forms.Label SinginLabel;
         private System.Windows.Forms.TextBox UsernameTxtBox;
         private System.Windows.Forms.Label ForgotPwdLabel;
-        private ControlsDesigner.Panels.TitleBarPanel TitleBar;
+        private ControlsDesigner.Panels.TitleBar TitleBar;
     }
 }
