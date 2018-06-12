@@ -1,5 +1,0 @@
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\bin\Debug\Module Services.dll
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\bin\Debug\Module Services.pdb
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\obj\Debug\Module Services.csproj.CoreCompileInputs.cache
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\obj\Debug\Module Services.dll
-C:\Users\Deiby\Documents\Projects\Visual Studio\Desktop Apps\CSharp\COFFESOFT\.NET\Coffesoft Application\Application\Module Services\obj\Debug\Module Services.pdb
