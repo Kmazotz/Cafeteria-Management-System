@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Helpers" exported="" scope="PROVIDED" />
-    <orderEntry type="module" module-name="Model" exported="" scope="PROVIDED" />
-    <orderEntry type="module" module-name="ViewModel" exported="" scope="PROVIDED" />
+    <orderEntry type="module" module-name="Helpers" exported="" />
+    <orderEntry type="module" module-name="Model" exported="" />
+    <orderEntry type="module" module-name="ViewModel" exported="" />
   </component>
 </module>

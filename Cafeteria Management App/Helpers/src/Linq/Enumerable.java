@@ -1,10 +1,12 @@
 package Linq;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
 
-public final class Enumerable
+public class Enumerable
 {
 
     public static <TSource, TResult> Iterable <TResult> Select(Iterable <TSource> source, Function <TSource, TResult> selector)
@@ -20,17 +22,21 @@ public final class Enumerable
             throw new IllegalArgumentException("selector");
         }
 
-        return Enumerable. <TSource, TResult> SelectIterator(source, selector);
+        return SelectIterator(source, selector);
 
     }
 
-    public static <TSource, TResult> Iterable <TResult> SelectIterator(Iterable <TSource> source, Function <TSource, TResult> selector)
+    public static <TSource, TResult> Iterable <TResult> SelectIterator(Iterable <TSource> source, Function <TSource,
+        TResult> selector)
     {
+        List <TResult> out = new ArrayList();
 
-        List <TSource> list = (List <TSource>) source;
+        for(TSource element : source)
+        {
+            out.add(selector.apply(element));
+        }
 
-        list.parallelStream().forEach((x) -> selector.apply(x));
-        return null;
+        return out;
     }
 
     public static void Join()
@@ -38,15 +44,23 @@ public final class Enumerable
 
     }
 
+    public static void Concat() {}
+
     public static void Last()
     {
 
     }
 
+    public static void Distinc() {}
+
+    public static void Except() {}
+
     public static void Range()
     {
 
     }
+
+    public static void Append() {}
 
     public static void SequenceEqual()
     {
@@ -110,41 +124,48 @@ public final class Enumerable
 
     }
 
-    public static void OrderBy(){
+    public static void OrderBy()
+    {
 
     }
 
-    public static void OrderByDescending(){
+    public static void OrderByDescending()
+    {
 
     }
 
-    public static void Pretend(){
+    public static void Pretend()
+    {
 
     }
 
-    public static void Repeat(){
+    public static void Repeat()
+    {
 
     }
 
-    public static void Reverse(){
+    public static void Reverse()
+    {
 
     }
 
-    public static void Min(){}
+    public static void Min() {}
 
-    public static void Max(){}
+    public static void Max() {}
 
-    public static void Take(){}
+    public static void Take() {}
 
-    public static void TakeWhile(){}
+    public static void TakeWhile() {}
 
-    public static void ThenBy(){
+    public static void ThenBy()
+    {
 
     }
 
-    public static void Union(){}
+    public static void Union() {}
 
-    public static void Zip(){
+    public static void Zip()
+    {
 
     }
 }
