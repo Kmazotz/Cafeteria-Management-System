@@ -1,0 +1,4 @@
+package Linq;
+
+class Error
+{}
