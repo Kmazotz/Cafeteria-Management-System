@@ -26,7 +26,7 @@ public class Enumerable
 
     }
 
-    public static <TSource, TResult> Iterable <TResult> SelectIterator(Iterable <TSource> source, Function <TSource,
+    static <TSource, TResult> Iterable <TResult> SelectIterator(Iterable <TSource> source, Function <TSource,
         TResult> selector)
     {
         List <TResult> out = new ArrayList();

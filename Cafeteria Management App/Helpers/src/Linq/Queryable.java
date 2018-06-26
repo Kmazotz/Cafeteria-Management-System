@@ -1,4 +1,7 @@
 package Linq;
 
-public class Queryable
-{}
+public final class Queryable
+{
+
+
+}
