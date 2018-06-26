@@ -2,6 +2,8 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.Enumeration;
 
 import static Linq.Enumerable.*;
 

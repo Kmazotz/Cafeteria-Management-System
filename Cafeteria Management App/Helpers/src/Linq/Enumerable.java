@@ -1,5 +1,7 @@
 package Linq;
 
+import Collections.Generics.IEnumerable;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -26,8 +28,7 @@ public class Enumerable
 
     }
 
-    static <TSource, TResult> Iterable <TResult> SelectIterator(Iterable <TSource> source, Function <TSource,
-        TResult> selector)
+    static <TSource, TResult> Iterable <TResult> SelectIterator(Iterable <TSource> source, Function <TSource, TResult> selector)
     {
         List <TResult> out = new ArrayList();
 
@@ -55,9 +56,20 @@ public class Enumerable
 
     public static void Except() {}
 
-    public static void Range()
+    public static IEnumerable <Integer> Range(int start, int count)
     {
+        long num = (start + count) - 1L;
+        if((count < 0) || (num > 0x7fffffffL))
+        {
+            throw new IllegalArgumentException("selector");
+        }
+        return RangeIterator(start, count);
 
+    }
+
+    private static IEnumerable <Integer> RangeIterator(int start, int count)
+    {
+        return new RangeIterator <Integer>(-2);
     }
 
     public static void Append() {}
