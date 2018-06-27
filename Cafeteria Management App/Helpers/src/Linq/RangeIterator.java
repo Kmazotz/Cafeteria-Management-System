@@ -5,7 +5,7 @@ import Collections.Generics.IEnumerator;
 
 import java.util.Iterator;
 
-final class RangeIterator implements IEnumerable <Integer>, IEnumerator<Integer>
+final class RangeIterator<T> implements IEnumerable <Integer>, IEnumerator<Integer>
 {
     private int state;
 
