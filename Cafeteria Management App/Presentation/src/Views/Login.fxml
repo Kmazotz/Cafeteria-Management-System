@@ -5,8 +5,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.*?>
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0"
-            xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Login">
+            xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="LoginController">
     <children>
+        <Pane layoutY="576.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="350.0"/>
+        <Pane layoutY="181.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="350.0"/>
         <Pane prefHeight="111.0" prefWidth="350.0">
             <children>
                 <Button layoutX="284.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
@@ -54,7 +57,5 @@
                 <Font name="Encode Sans Semi Expanded Bold" size="24.0"/>
             </font>
         </Label>
-        <Pane layoutY="181.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="350.0"/>
-        <Pane layoutY="576.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="350.0"/>
     </children>
 </AnchorPane>

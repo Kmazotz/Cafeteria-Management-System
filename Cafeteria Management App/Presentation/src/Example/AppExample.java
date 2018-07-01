@@ -1,13 +1,14 @@
+package Example;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class App extends Application
+public class AppExample extends Application
 {
 
     public static void main(String[] args)
@@ -18,12 +19,9 @@ public class App extends Application
     @Override
     public void start(Stage stage) throws IOException
     {
-        Object root = FXMLLoader.load(getClass().getResource("Views/Login.fxml"));
-
-        Scene scene = new Scene((Parent) root, 350, 600);
+        HBox root = (HBox) FXMLLoader.load(getClass().getResource("FirstDocument.fxml"));
+        Scene scene = new Scene(root, 300, 80);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.TRANSPARENT);
-
         stage.show();
     }
 }
