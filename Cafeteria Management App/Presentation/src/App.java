@@ -18,12 +18,14 @@ public class App extends Application
     @Override
     public void start(Stage stage) throws IOException
     {
-        Object root = FXMLLoader.load(getClass().getResource("Views/Login.fxml"));
 
-        Scene scene = new Scene((Parent) root, 350, 600);
+        Object root = FXMLLoader.load(getClass().getResource("Views/Windows/InventoryWindow.fxml"));
+
+        Scene scene = new Scene((Parent) root, 960, 600);
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
 
         stage.show();
+
     }
 }

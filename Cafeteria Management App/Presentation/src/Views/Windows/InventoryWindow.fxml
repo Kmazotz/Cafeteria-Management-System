@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InventoryController">
+    <children>
+        <TableView fx:id="productTable" editable="false" layoutX="296.0" layoutY="202.0" prefHeight="342"
+                   prefWidth="538" stylesheets="@../../Styles/DataGridStyle.css">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="20.0" text="ID"/>
+                <TableColumn fx:id="referenceCodeColumn" prefWidth="110.0" text="Reference Code"/>
+                <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="200.0" text="Name"/>
+                <TableColumn fx:id="descriptionColumn" prefWidth="100.0" text="Description"/>
+                <TableColumn fx:id="inventoryMinColumn" prefWidth="100.0" text="Inventory Min"/>
+                <TableColumn fx:id="priceInColumn" prefWidth="100.0" text="Price In"/>
+                <TableColumn fx:id="priceOutColumn" prefWidth="100.0" text="Price Out"/>
+                <TableColumn fx:id="unitsColumn" prefWidth="-1.0" text="Units"/>
+                <TableColumn fx:id="categoryColumn" prefWidth="100.0" text="Category"/>
+                <TableColumn fx:id="creationDateColumn" prefWidth="100.0" text="Creation Date"/>
+                <TableColumn fx:id="isActiveColumn" prefWidth="100.0" text="Is Active"/>
+            </columns>
+        </TableView>
+        <Button layoutX="855.0" layoutY="215.0" mnemonicParsing="false" text="Add" fx:id="addButton"
+                onAction="#OnClickAddButton"/>
+        <Button layoutX="856.0" layoutY="252.0" mnemonicParsing="false" text="Delete" fx:id="deleteButton"
+                onAction="#OnClickDeleteButton"/>
+        <Button layoutX="855.0" layoutY="289.0" mnemonicParsing="false" text="Modify" fx:id="modifyButton"
+                onAction="#OnClickModifyButton"/>
+    </children>
+</AnchorPane>

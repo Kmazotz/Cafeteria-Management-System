@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="513.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProductFormController">
+    <children>
+        <TextArea layoutX="143.0" layoutY="109.0" prefHeight="110.0" prefWidth="340.0"
+                  promptText="Product Description"/>
+        <CheckBox disable="true" layoutX="143.0" layoutY="447.0" mnemonicParsing="false" selected="true"
+                  text="Is Active"/>
+        <Button layoutX="393.0" layoutY="443.0" mnemonicParsing="false" text="Button"/>
+        <ComboBox layoutX="143.0" layoutY="406.0" prefWidth="150.0" promptText="Category"/>
+        <DatePicker disable="true" layoutX="143.0" layoutY="369.0" promptText="Creation Date"/>
+        <TextField layoutX="143.0" layoutY="44.0" promptText="Reference Code"/>
+        <TextField layoutX="143.0" layoutY="14.0" promptText="ID"/>
+        <TextField layoutX="143.0" layoutY="73.0" promptText="Name"/>
+        <Button layoutX="473.0" layoutY="443.0" mnemonicParsing="false" text="Button"/>
+        <TextField layoutX="143.0" layoutY="333.0" promptText="Price In"/>
+        <TextField layoutX="143.0" layoutY="300.0" promptText="Price Out"/>
+        <ChoiceBox layoutX="313.0" layoutY="263.0" prefWidth="150.0"/>
+        <ComboBox layoutX="143.0" layoutY="229.0" prefWidth="150.0" promptText="Inventory Minimum"/>
+        <ComboBox layoutX="143.0" layoutY="263.0" prefWidth="150.0" promptText="Units"/>
+    </children>
+</AnchorPane>

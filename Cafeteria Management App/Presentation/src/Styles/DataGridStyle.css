@@ -1,0 +1,8 @@
+.table-view {
+    -fx-background-color: white;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-border-color: #e0e0e0;
+    -fx-text-fill: #707070;
+
+}
