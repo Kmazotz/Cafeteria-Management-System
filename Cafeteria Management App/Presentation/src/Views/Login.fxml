@@ -30,8 +30,9 @@
                         <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Label>
-                <Button layoutX="21.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0"
+                <Button fx:id="LoginButton" layoutX="21.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#LoadSesion"
+                        prefHeight="39.0" prefWidth="119.0"
                         style="-fx-background-color: #00A39F; -fx-background-radius: 0;" text="Iniciar Sesión"
                         textFill="WHITE">
                     <font>
@@ -81,27 +82,25 @@
                 <Pane layoutY="118.0" prefHeight="39.0" prefWidth="350.0" style="-fx-background-color: #14938D;"/>
             </children>
         </Pane>
-        <PasswordField layoutX="69.0" layoutY="306.0" prefHeight="39.0" prefWidth="257.0" promptText="Contraseña"
-                       style="-fx-border-color: #00ADA9; -fx-border-width: 2px;">
+        <PasswordField fx:id="password" layoutX="69.0" layoutY="306.0" prefHeight="39.0" prefWidth="257.0"
+                       promptText="Contraseña" style="-fx-border-color: #00ADA9; -fx-border-width: 2px;">
             <font>
                 <Font name="Segoe UI Semilight" size="15.0"/>
             </font>
         </PasswordField>
-        <TextField layoutX="69.0" layoutY="222.0" prefHeight="39.0" prefWidth="257.0" promptText="Nombre de usuario"
-                   style="-fx-border-color: #00ADA9; -fx-border-width: 2;">
+        <TextField fx:id="user" layoutX="69.0" layoutY="222.0" prefHeight="39.0" prefWidth="257.0"
+                   promptText="Nombre de usuario" style="-fx-border-color: #00ADA9; -fx-border-width: 2;">
             <font>
                 <Font name="Segoe UI Semilight" size="15.0"/>
             </font>
         </TextField>
-        <Label layoutX="22.0" layoutY="261.0" prefHeight="46.0" prefWidth="304.0"
-               text="Ingrese una dirección de correo electrónico válida o un nombre de usuario." textFill="#ff6444"
-               visible="false" wrapText="true">
+        <Label fx:id="DataText" layoutX="22.0" layoutY="261.0" prefHeight="46.0" prefWidth="304.0" textFill="#ff6444"
+               wrapText="true">
             <font>
                 <Font name="Encode Sans Light" size="15.0"/>
             </font>
         </Label>
-        <Label layoutX="22.0" layoutY="354.0" text="Su cuenta o contraseña es incorrecta." textFill="#ff6444"
-               visible="false">
+        <Label fx:id="ErrorDataText" layoutX="22.0" layoutY="354.0" textFill="#ff6444">
             <font>
                 <Font name="Encode Sans Semi Expanded ExtraLight" size="15.0"/>
             </font>

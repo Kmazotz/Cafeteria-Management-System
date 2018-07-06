@@ -1,6 +1,9 @@
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -14,6 +17,17 @@ public class LoginController implements Initializable
     @FXML
     public Button minimizeButton;
     public Button closeButton;
+
+    @FXML
+    private Label ErrorDataText;
+    @FXML
+    private Label DataText;
+
+    @FXML
+    private TextField user;
+    @FXML
+    private PasswordField password;
+
 
 
     @Override
@@ -43,5 +57,24 @@ public class LoginController implements Initializable
         URL minimize = getClass().getResource("/Resources/Min.png");
         Image MinimizeImg = new Image(minimize.toString(), 24, 24, false, true);
         minimizeButton.setGraphic(new ImageView(MinimizeImg));
+    }
+
+    private void LoadSesion(javafx.event.ActionEvent event)
+    {
+
+        if (user.getText().equals("ADMIN") && password.getText().equals("123456"))
+        {
+
+        }
+
+        else if (user.getText().equals("") && password.getText().equals(""))
+        {
+            DataText.setText("Ingrese una dirección de correo electrónico o un nombre de usuario valido.");
+        }
+
+        else
+        {
+            ErrorDataText.setText("Su usuario o contraseña son invalidos o no existen.");
+        }
     }
 }
