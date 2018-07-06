@@ -1,8 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1">
-
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="900.0"
+            xmlns="http://javafx.com/javafx/8.0.121" fx:controller="MainWindowController">
+    <children>
+        <Pane layoutX="-1.0" prefHeight="153.0" prefWidth="915.0" style="-fx-background-color: #00A39F;">
+            <children>
+                <Pane layoutY="114.0" prefHeight="39.0" prefWidth="915.0" style="-fx-background-color: #14938D;">
+                    <children>
+                        <Button fx:id="homeButton" layoutX="24.0" layoutY="8.0" maxHeight="-Infinity"
+                                maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                prefHeight="24.0" prefWidth="24.0"
+                                style="-fx-content-display: center, center; -fx-background-size: cover, auto; -fx-background-color: #14938D;"
+                                text="Button"/>
+                        <Button layoutX="81.0" layoutY="4.0" mnemonicParsing="false"
+                                style="-fx-background-color: #14938D;" text="Inventario" textFill="WHITE">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button layoutX="200.0" layoutY="4.0" mnemonicParsing="false"
+                                style="-fx-background-color: #14938D;" text="Facturación" textFill="WHITE">
+                            <font>
+                                <Font name="Encode Sans Light" size="15.0"/>
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button layoutX="325.0" layoutY="4.0" mnemonicParsing="false"
+                                style="-fx-background-color: #14938D;" text="Gestion de Usuarios" textFill="WHITE">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button layoutX="509.0" layoutY="4.0" mnemonicParsing="false"
+                                style="-fx-background-color: #14938D;" text="Pedidos" textFill="WHITE">
+                            <font>
+                                <Font name="Encode Sans Light" size="15.0"/>
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button layoutX="612.0" layoutY="5.0" mnemonicParsing="false"
+                                style="-fx-background-color: #14938D;" text="Ayuda" textFill="WHITE">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                    </children>
+                </Pane>
+                <Button fx:id="closeButton" layoutX="889.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#CloseWindow"
+                        prefHeight="24.0" prefWidth="24.0"
+                        style="-fx-content-display: center, center; -fx-background-size: cover, auto; -fx-background-color: #00A39F;"/>
+                <Button fx:id="maximizeButton" layoutX="865.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#MaximizeWindow"
+                        prefHeight="24.0" prefWidth="24.0"
+                        style="-fx-content-display: center , center; -fx-background-size: cover, auto; -fx-background-color: #00A39F;"/>
+                <Button fx:id="minimizeButton" layoutX="841.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#MinimizeWindow"
+                        prefHeight="24.0" prefWidth="24.0"
+                        style="-fx-content-display: center, center; -fx-background-size: cover, auto; -fx-background-color: #00A39F;"/>
+            </children>
+        </Pane>
+        <Pane layoutY="584.0" prefHeight="25.0" prefWidth="914.0" style="-fx-background-color: #00A39F;">
+            <children>
+                <Label layoutX="790.0" layoutY="2.0" text="Terminos de uso" textFill="WHITE">
+                    <font>
+                        <Font name="Encode Sans Light" size="15.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="644.0" layoutY="2.0" text="© CoffeeSOFT 2018" textFill="WHITE"/>
+            </children>
+        </Pane>
+    </children>
 </AnchorPane>
