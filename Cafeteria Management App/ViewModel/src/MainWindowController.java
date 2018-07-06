@@ -1,3 +1,4 @@
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -26,12 +27,14 @@ public class MainWindowController implements Initializable
         stage.setIconified(true);
     }
 
-    public void MaximizeWindow(javafx.event.ActionEvent event)
+    @FXML
+    private void MaximizeWindow(ActionEvent e)
     {
         var stage = (Stage) maximizeButton.getScene().getWindow();
-        stage.isMaximized();
+        stage.setMaximized(true);
     }
 
+    @FXML
     public void CloseWindow(javafx.event.ActionEvent event)
     {
         var stage = (Stage) closeButton.getScene().getWindow();

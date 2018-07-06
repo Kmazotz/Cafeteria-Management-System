@@ -19,9 +19,9 @@ public class App extends Application
     public void start(Stage stage) throws IOException
     {
 
-        Object root = FXMLLoader.load(getClass().getResource("Views/Windows/InventoryWindow.fxml"));
+        Object root = FXMLLoader.load(getClass().getResource("Views/Windows/Login.fxml"));
 
-        Scene scene = new Scene((Parent) root, 960, 600);
+        Scene scene = new Scene((Parent) root, 350, 600);
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
 
