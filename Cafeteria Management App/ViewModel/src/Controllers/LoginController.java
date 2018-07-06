@@ -1,7 +1,11 @@
 package Controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -9,41 +13,51 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
+import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable
 {
-
     @FXML
     public Button minimizeButton;
+    @FXML
     public Button closeButton;
 
+    HashMap<String, String> users = new HashMap<>();
     @FXML
-    private Label ErrorDataText;
-    @FXML
-    private Label DataText;
+    private Label UidErrorLabel;
 
     @FXML
-    private TextField user;
-    @FXML
-    private PasswordField password;
+    private Label PwdErrorLabel;
 
+    @FXML
+    private TextField userTxtField;
+
+    @FXML
+    private PasswordField passwordTxtField;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
         LoadImages();
+        users.put("ADMIN", "1234");
+        users.put("GUEST", "none");
     }
 
+    @FXML
     public void MinimizeWindow(javafx.event.ActionEvent event)
     {
         var stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.setIconified(true);
     }
 
+
+    @FXML
     public void closeWindow(javafx.event.ActionEvent event)
     {
         var stage = (Stage) closeButton.getScene().getWindow();
@@ -61,22 +75,52 @@ public class LoginController implements Initializable
         minimizeButton.setGraphic(new ImageView(MinimizeImg));
     }
 
-    private void LoadSesion(javafx.event.ActionEvent event)
+    @FXML
+    private void LoadSesion(javafx.event.ActionEvent event) throws IOException
     {
-
-        if (user.getText().equals("ADMIN") && password.getText().equals("123456"))
+        if (userTxtField.getText() != null && passwordTxtField != null)
         {
 
-        }
+            if (users.containsKey(userTxtField.getText()))
+            {
+                if (users.get(userTxtField.getText()).equals(passwordTxtField.getText()))
+                {
+                    try
+                    {
 
-        else if (user.getText().equals("") && password.getText().equals(""))
-        {
-            DataText.setText("Ingrese una dirección de correo electrónico o un nombre de usuario valido.");
-        }
+                        Object window = FXMLLoader.load(getClass().getResource("/Views/Windows/MainWindow.fxml"));
 
+                        Scene scene = new Scene((Parent) window, 960, 600);
+                        Stage stage = new Stage(StageStyle.TRANSPARENT);
+                        stage.setScene(scene);
+                        stage.show();
+                        ((Node) (event.getSource())).getScene().getWindow().hide();
+                    }
+                    catch (IOException e)
+                    {
+                        System.out.println("Error, Information");
+                    }
+                }
+                else
+                {
+                    PwdErrorLabel.setText("Contraseña incorrecta");
+                    UidErrorLabel.setText("");
+                }
+
+            }
+            else
+            {
+                UidErrorLabel.setText("Usuario no valido.");
+            }
+
+
+        }
         else
         {
-            ErrorDataText.setText("Su usuario o contraseña son invalidos o no existen.");
+            UidErrorLabel.setText("Ingrese un usuario");
+            if (passwordTxtField.getText() == null) { PwdErrorLabel.setText("Ingrese la contraseña");}
         }
+
     }
+
 }
