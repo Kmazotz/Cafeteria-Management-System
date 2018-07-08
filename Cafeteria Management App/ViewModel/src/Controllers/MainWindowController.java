@@ -1,7 +1,10 @@
+package Controllers;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -17,9 +20,17 @@ public class MainWindowController implements Initializable
     public Button maximizeButton;
     public Button closeButton;
     public Button homeButton;
+    public Button UserProperty;
+    String user;
+    @FXML
+    private Label SessionName;
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {Loadimages();}
+    @FXML
+    public void initialize(URL location, ResourceBundle resources)
+    {
+        Loadimages();
+        SessionName.setText(user);
+    }
 
     public void MinimizeWindow(javafx.event.ActionEvent event)
     {
@@ -41,6 +52,7 @@ public class MainWindowController implements Initializable
         stage.close();
     }
 
+    @FXML
     private void Loadimages()
     {
         URL close = getClass().getResource("/Resources/close.png");
@@ -58,6 +70,10 @@ public class MainWindowController implements Initializable
         URL home = getClass().getResource("/Resources/Home.png");
         Image HomeImg = new Image(home.toString(), 24, 24, false, true);
         homeButton.setGraphic(new ImageView(HomeImg));
+
+        URL chevron = getClass().getResource("/Resources/Chevron-Down.png");
+        Image DownImg = new Image(chevron.toString(), 24, 24, false, true);
+        UserProperty.setGraphic(new ImageView(DownImg));
 
     }
 }

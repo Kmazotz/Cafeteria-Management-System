@@ -87,6 +87,9 @@ public class LoginController implements Initializable
                 {
                     try
                     {
+                        MainWindowController userName = new MainWindowController();
+                        userName.user = userTxtField.getText();
+                        System.out.println("Welcome :   " + userName.user);
 
                         Object window = FXMLLoader.load(getClass().getResource("/Views/Windows/MainWindow.fxml"));
 
@@ -98,7 +101,9 @@ public class LoginController implements Initializable
                     }
                     catch (IOException e)
                     {
-                        System.out.println("Error, Information");
+                        System.out.println("Ocurrio un error al iniciar sesion.");
+                        System.out.println(userTxtField.getText());
+                        System.out.println(passwordTxtField.getText());
                     }
                 }
                 else
@@ -120,7 +125,6 @@ public class LoginController implements Initializable
             UidErrorLabel.setText("Ingrese un usuario");
             if (passwordTxtField.getText() == null) { PwdErrorLabel.setText("Ingrese la contraseña");}
         }
-
     }
 
 }
